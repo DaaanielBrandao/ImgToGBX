@@ -7,6 +7,7 @@ namespace ImgToGBX.Models
         public string InputMapPath { get; set; } = "InputMap/nothing.Map.Gbx";
         public int ResolutionX { get; set; } = 48;
         public int ResolutionY { get; set; } = 48;
+        public int Height { get; set; } = 10;
         public string ConfigFilePath { get; set; } = "config/color-to-block-mapping.json";
         public bool ShowHelp { get; set; } = false;
 

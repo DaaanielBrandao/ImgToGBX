@@ -15,13 +15,14 @@ try
     // Initialize services
     var blockConfigService = new BlockConfigurationService(config.ConfigFilePath);
     var imageProcessorService = new ImageProcessorService();
-    var mapGeneratorService = new MapGeneratorService(blockConfigService);
+    var mapGeneratorService = new MapGeneratorService(blockConfigService, config);
 
     Console.WriteLine("ImgToGBX - Image to TrackMania Map Converter");
     Console.WriteLine("==========================================");
     Console.WriteLine($"Input Image: {config.InputImagePath}");
     Console.WriteLine($"Output Map: {config.OutputMapPath}");
     Console.WriteLine($"Resolution: {config.ResolutionX}x{config.ResolutionY}");
+    Console.WriteLine($"Height: {config.Height}");
     Console.WriteLine($"Config File: {config.ConfigFilePath}");
     Console.WriteLine();
 

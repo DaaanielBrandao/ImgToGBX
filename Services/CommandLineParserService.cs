@@ -50,6 +50,11 @@ namespace ImgToGBX.Services
                         if (i + 1 < args.Length)
                             config.ConfigFilePath = args[++i];
                         break;
+                    case "--height":
+                    case "-z":
+                        if (i + 1 < args.Length && int.TryParse(args[++i], out int height))
+                            config.Height = height;
+                        break;
                 }
             }
 
@@ -68,6 +73,7 @@ namespace ImgToGBX.Services
             Console.WriteLine("  -b, --input-map-path <path>    Path of the base map to use (default: nothing)");
             Console.WriteLine("  -x, --resolution-x <number>    Width resolution for the image (max: 48, default: 48)");
             Console.WriteLine("  -y, --resolution-y <number>    Height resolution for the image (max: 48, default: 48)");
+            Console.WriteLine("  -z, --height <number>          Height (Y coordinate) for placing blocks (default: 10)");
             Console.WriteLine("  -c, --config-file <path>       Path to the color-to-block mapping configuration file");
             Console.WriteLine("                                 (default: config/color-to-block-mapping.json)");
             Console.WriteLine("  -h, --help                     Show this help information");

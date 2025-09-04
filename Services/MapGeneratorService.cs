@@ -10,10 +10,12 @@ namespace ImgToGBX.Services
     public class MapGeneratorService
     {
         private readonly BlockConfigurationService _blockConfigService;
+        private readonly ApplicationConfig _config;
 
-        public MapGeneratorService(BlockConfigurationService blockConfigService)
+        public MapGeneratorService(BlockConfigurationService blockConfigService, ApplicationConfig config)
         {
             _blockConfigService = blockConfigService;
+            _config = config;
         }
 
         public CGameCtnChallenge LoadMap(string mapPath)
@@ -51,7 +53,7 @@ namespace ImgToGBX.Services
         private CGameCtnBlock CreateBlock(ColorMapping colorMapping, int x, int y)
         {
             CGameCtnBlock block = new CGameCtnBlock();
-            block.Coord = new Int3(x, 10, y);
+            block.Coord = new Int3(x, _config.Height, y);
             block.Name = colorMapping.BlockName;
             block.Color = colorMapping.GetDifficultyColor();            
             return block;
