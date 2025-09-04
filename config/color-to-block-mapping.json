@@ -1,0 +1,65 @@
+{
+  "colorMappings": [
+    {
+      "hexColor": "beb5b0",
+      "blockName": "PlatformTechBase",
+      "diffColor": "Default"
+    },
+    {
+      "hexColor": "d58d74",
+      "blockName": "PlatformDirtBase",
+      "diffColor": "Default"
+    },
+    {
+      "hexColor": "dfe3ec",
+      "blockName": "PlatformIceBase",
+      "diffColor": "Default"
+    },
+    {
+      "hexColor": "fde85a",
+      "blockName": "PlatformPlasticBase",
+      "diffColor": "Default"
+    },
+    {
+      "hexColor": "4dd083",
+      "blockName": "PlatformPlasticBase",
+      "diffColor": "Green"
+    },
+    {
+      "hexColor": "349dc3",
+      "blockName": "PlatformPlasticBase",
+      "diffColor": "Blue"
+    },
+    {
+      "hexColor": "ea494a",
+      "blockName": "PlatformPlasticBase",
+      "diffColor": "Red"
+    },
+    {
+      "hexColor": "29292b",
+      "blockName": "PlatformPlasticBase",
+      "diffColor": "Black"
+    },
+    {
+      "hexColor": "a2f0fc",
+      "blockName": "PlatformWaterRampBase",
+      "diffColor": "Default"
+    },
+    {
+      "hexColor": "b5c981",
+      "blockName": "PlatformGrassBase",
+      "diffColor": "Default"
+    },
+    {
+      "hexColor": "ffd299",
+      "blockName": "DecoPlatformDirtBase",
+      "diffColor": "Default"
+    },
+    {
+      "hexColor": "8da061",
+      "blockName": "DecoPlatformBase",
+      "diffColor": "Default"
+    }
+  ]
+}
+
