@@ -68,11 +68,11 @@ namespace ImgToGBX.Services
             Console.WriteLine("Usage: ImgToGBX [options]");
             Console.WriteLine();
             Console.WriteLine("Options:");
-            Console.WriteLine("  -i, --image-path <path>        Path of the input image file (default: pedro.png)");
+            Console.WriteLine("  -i, --image-path <path>        Path of the input image file (default: Imgs/example.png.png)");
             Console.WriteLine("  -o, --output-map-path <path>   Path for the output map (default: OutputMap/test)");
             Console.WriteLine("  -b, --input-map-path <path>    Path of the base map to use (default: nothing)");
-            Console.WriteLine("  -x, --resolution-x <number>    Width resolution for the image (max: 48, default: 48)");
-            Console.WriteLine("  -y, --resolution-y <number>    Height resolution for the image (max: 48, default: 48)");
+            Console.WriteLine("  -x, --resolution-x <number>    Width resolution for the image (max: 256, default: 48)");
+            Console.WriteLine("  -y, --resolution-y <number>    Height resolution for the image (max: 256, default: 48)");
             Console.WriteLine("  -z, --height <number>          Height (Y coordinate) for placing blocks (default: 10)");
             Console.WriteLine("  -c, --config-file <path>       Path to the color-to-block mapping configuration file");
             Console.WriteLine("                                 (default: config/color-to-block-mapping.json)");

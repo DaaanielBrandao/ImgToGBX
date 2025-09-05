@@ -13,9 +13,9 @@ namespace ImgToGBX.Models
 
         public void Validate()
         {
-            if (ResolutionX > 48 || ResolutionY > 48)
+            if (ResolutionX > 256 || ResolutionY > 256)
             {
-                throw new ArgumentException("Resolution cannot exceed 48x48 pixels");
+                throw new ArgumentException("Resolution cannot exceed 256x256 pixels");
             }
 
             if (ResolutionX <= 0 || ResolutionY <= 0)

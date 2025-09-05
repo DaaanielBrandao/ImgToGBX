@@ -3,6 +3,7 @@
 This project resizes and converts images into TrackMania maps by mapping each pixel to the closest matching block based on color.
 
 ![Example](example/image.png)
+![Example2](example/image2.png)
 
 ## Download and Installation
 
@@ -33,8 +34,8 @@ This will use the default settings and convert `Imgs/example.png` to a TrackMani
 | `-i` | `--image-path` | Path of the input image file | `Imgs/example.png` |
 | `-o` | `--output-map-path` | Path for the output map | `OutputMap/test.Map.Gbx` |
 | `-b` | `--input-map-path` | Path of the base map to use | `InputMap/nothing.Map.Gbx` |
-| `-x` | `--resolution-x` | Width resolution for the image (max: 48) | `48` |
-| `-y` | `--resolution-y` | Height resolution for the image (max: 48) | `48` |
+| `-x` | `--resolution-x` | Width resolution for the image (max: 256) | `48` |
+| `-y` | `--resolution-y` | Height resolution for the image (max: 256) | `48` |
 | `-z` | `--height` | Height (Y coordinate) for placing blocks | `10` |
 | `-c` | `--config-file` | Path to the color-to-block mapping configuration file | `config/color-to-block-mapping.json` |
 | `-h` | `--help` | Show help information | - |
@@ -53,7 +54,7 @@ ImgToGBX --image-path test.png --output-map-path result -x 24 -y 24 --height 15
 
 **Use a custom base map:**
 ```bash
-ImgToGBX -i photo.jpg -b InputMap/custom.Map.Gbx -o output.Map.Gbx
+ImgToGBX -i photo.jpg -b InputMap/nothing_big.Map.Gbx -o output.Map.Gbx
 ```
 
 ## Configuration
